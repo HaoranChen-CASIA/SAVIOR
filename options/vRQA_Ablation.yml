@@ -1,0 +1,82 @@
+name: vRQA2024_singleF
+num_epochs: 1
+l_num_epochs: 0
+warmup_epochs: 2.5
+ema: true
+save_model: true
+batch_size: 1
+num_workers: 1
+
+wandb:
+    project_name: vRQA2024_ablation
+
+data:
+    train:
+        type: FusionDataset
+        args:
+            phase: train
+            anno_file: /mnt/Ext001/chenhr/StableVQA/examplar_data_labels/FlyEM_32nm_pseu_label/train_list.txt
+            data_prefix: /mnt/Ext001/chenhr/StableVQA/FlyEM_iso_32nm
+            sample_types:
+                resize:
+                    size_h: 256
+                    size_w: 256
+                    clip_len: 32
+                    frame_interval: 1
+                    t_frag: 1
+                    num_clips: 1
+
+    val:
+        type: FusionDataset
+        args:
+            phase: test
+            anno_file: /mnt/Ext001/chenhr/StableVQA/examplar_data_labels/FlyEM_32nm_pseu_label/val_list.txt
+            data_prefix: /mnt/Ext001/chenhr/StableVQA/FlyEM_iso_32nm
+            sample_types:
+                resize:
+                    size_h: 256
+                    size_w: 256
+                    clip_len: 32
+                    frame_interval: 1
+                    t_frag: 1
+                    num_clips: 1
+
+    test:
+        type: FusionDataset
+        args:
+            phase: test
+            anno_file: /mnt/Ext001/chenhr/StableVQA/examplar_data_labels/FlyEM_32nm_pseu_label/val_list.txt
+            data_prefix: /mnt/Ext001/chenhr/StableVQA/FlyEM_iso_32nm
+            sample_types:
+                resize:
+                    size_h: 256
+                    size_w: 256
+                    clip_len: 32
+                    frame_interval: 1
+                    t_frag: 1
+                    num_clips: 4
+        
+model:
+    type: ssEMevaluator_ablation
+    args:
+        feat_type: sf+of
+        backbone:
+            resize:
+                checkpoint: false
+                pretrained: 
+        backbone_size: swinv1
+        backbone_preserve_keys: resize
+        divide_head: false
+        vqa_head:
+            in_channels: 768
+            hidden_channels: 64
+            
+optimizer:
+    lr: !!float 1e-3
+    backbone_lr_mult: !!float 1e-1
+    wd: 0.05
+
+load_path: ./pretrained_weights/swin_tiny_patch4_window7_224.pth
+test_load_path: ./em_weights/vRQA2024_singleF_ranked_val_sf+of.pth
+        
+
