@@ -28,7 +28,7 @@ To re-implement the experiments in the paper, it is recommended to download the 
 
 [CSTCloud]()
 
-Pretrained Weights can be downloaded from.
+Pretrained Weights of SAVIOR can be downloaded from:
 ### Pretrained Weights
 
 [CSTCloud]()
