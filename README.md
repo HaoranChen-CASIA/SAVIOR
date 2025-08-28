@@ -23,21 +23,23 @@ conda activate SAVIOR
 pip install -r requirements.txt
 ```
 
-To re-implement the experiments in the paper, it is recommended to download the dataset used in this paper.
 ### Validation and Test Datasets
+To re-implement the experiments in the paper, it is recommended to download the dataset used in this paper.
 
 [CSTCloud]()
 
-Pretrained Weights of SAVIOR can be downloaded from:
 ### Pretrained Weights
+Pretrained Weights of SAVIOR can be downloaded from:
 
 [CSTCloud]()
 
+### Quantitative Experiments
 To re-implement the quantitative experiments:
 ```Register
 python train_Gating_and_eval.py
 ```
 
+### Qualitative Experiments
 To re-implement the qualitative experiments:
 ```Register
 python infer_large_scale_MAM_Gating.py
