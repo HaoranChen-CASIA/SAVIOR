@@ -25,8 +25,9 @@ pip install -r requirements.txt
 
 ### Validation and Test Datasets
 To re-implement the experiments in the paper, it is recommended to download the dataset used in this paper.
-
-[CSTCloud]()
+Test: Ranked volumes generated from Lucchi++, with combined distortion:
+[GoogleDrive](https://drive.google.com/file/d/1EoeLCeYjoac_ASdTV2Wloi0sTY6l8PJM/view?usp=sharing)
+All datasets required for training, testing and comparison experiments will be made available after the paper's official publication.
 
 ### Pretrained Weights
 Pretrained Weights of SAVIOR can be downloaded from:
