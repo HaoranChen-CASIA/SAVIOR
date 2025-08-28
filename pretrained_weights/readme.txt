@@ -1,0 +1,1 @@
+Download and Put raft-things.pth, swin_tiny_patch4_window7_224.pth in this folder.
