@@ -28,7 +28,7 @@ To re-implement the experiments in the paper, it is recommended to download the 
 
 Validation: 10 set of Ranked volumes generated from FlyEM. 3 types of distortion:
 
-.[CST Cloud](https://pan.cstcloud.cn/s/k752tI31TF4)
+[CST Cloud](https://pan.cstcloud.cn/s/k752tI31TF4)
 
 Test: Ranked volumes generated from Lucchi++, with combined distortion:
 
