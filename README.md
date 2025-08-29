@@ -26,6 +26,9 @@ pip install -r requirements.txt
 ### Validation and Test Datasets
 To re-implement the experiments in the paper, it is recommended to download the dataset used in this paper.
 
+Validation: 10 set of Ranked volumes generated from FlyEM. 3 types of distortion:
+.[CST Cloud](https://pan.cstcloud.cn/s/k752tI31TF4)
+
 Test: Ranked volumes generated from Lucchi++, with combined distortion:
 
 [GoogleDrive](https://drive.google.com/file/d/1EoeLCeYjoac_ASdTV2Wloi0sTY6l8PJM/view?usp=sharing)
