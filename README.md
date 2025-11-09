@@ -23,6 +23,15 @@ conda activate SAVIOR
 pip install -r requirements.txt
 ```
 
+### Important Citation of Membrane Affinity Map computing (*)
+In this paper, we used the Membrane Affinity Map (MAM) to help optical flow gain biological prior knowledge.
+The computation method of MAM was cited from an unpublished work of our laboratory (OrgMIM by Yanchao Zhang), and its Github repository can be find in
+
+[OrgMIM](https://github.com/yanchaoz/OrgMIM)
+
+please cite the corresponding paper when using SAVIOR with MAM computation.
+
+
 ### Validation and Test Datasets
 To re-implement the experiments in the paper, it is recommended to download the dataset used in this paper.
 
