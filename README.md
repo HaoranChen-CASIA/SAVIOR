@@ -64,9 +64,9 @@ python infer_large_scale_MAM_Gating.py
 The training dataset and codes will be released soon.
 
 ### TODO List
-1. upload all pretrained weights of SAVIOR model
-2. upload all test datasets (especially FlyEM, area 1 and 2)
-3. upload selected FAFB v14.1(FlyWire) and MiCrONs Minnie65 videos (with coordinates and mip level)
+1. Upload all pretrained weights of SAVIOR model
+2. Updated: upload all test datasets (FlyEM, 6 areas, 150 subblocks total)
+3. Upload selected FAFB v14.1(FlyWire) and MiCrONs Minnie65 videos (with coordinates and mip level)
 
 
 
