@@ -29,8 +29,7 @@ The computation method of MAM was cited from an unpublished work of our laborato
 
 [OrgMIM](https://github.com/yanchaoz/OrgMIM)
 
-please cite the corresponding paper when using SAVIOR with MAM computation.
-
+We sincerely extend our gratitude to YanChao Zhang for the design of the MAM computational methodology and related code support. Appropriate citation has been provided in our formally published paper to acknowledge this contribution. Please do cite the corresponding work when using SAVIOR with MAM computation.
 
 ### Validation and Test Datasets
 To re-implement the experiments in the paper, it is recommended to download the dataset used in this paper.
