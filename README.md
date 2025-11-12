@@ -1,6 +1,19 @@
 # SAVIOR
 Official implementation of "SAVIOR: Assessing Volume Alignment Quality for Serial Section Electron Microscopy Images using Large Vision-Language Model"
 
+### Important Citation of Membrane Affinity Map computing (*)
+In this paper, we used the Membrane Affinity Map (MAM) to guide optical flow gain biological prior knowledge (see MAM-guided Estimator).
+The computation method of MAM was cited from an unpublished work of our laboratory (OrgMIM by Yanchao Zhang), and its Github repository can be find in
+
+[OrgMIM](https://github.com/yanchaoz/OrgMIM)
+
+We sincerely extend our gratitude to YanChao Zhang for the design of the MAM computational methodology and related code support. Appropriate citation has been provided in our formally published paper to acknowledge this contribution. Please do cite the corresponding work when using SAVIOR with MAM computation.
+
+```shell
+Zhang, Y., Zhai, H., Guo, J., Li, Z., Liu, J., & Han, H. Masked Image Modeling for Generalizable Organelle Segmentation in Volume EM (Version 1.0) [Computer software]. https://github.com/yanchaoz/OrgMIM
+```
+
+
 ## Using the Code
 ### Requirements
 This code has been developed under Python 3.9.17, PyTorch 2.0.1, and Ubuntu 16.04.
@@ -22,14 +35,6 @@ conda create -n SAVIOR
 conda activate SAVIOR
 pip install -r requirements.txt
 ```
-
-### Important Citation of Membrane Affinity Map computing (*)
-In this paper, we used the Membrane Affinity Map (MAM) to guide optical flow gain biological prior knowledge (see MAM-guided Estimator).
-The computation method of MAM was cited from an unpublished work of our laboratory (OrgMIM by Yanchao Zhang), and its Github repository can be find in
-
-[OrgMIM](https://github.com/yanchaoz/OrgMIM)
-
-We sincerely extend our gratitude to YanChao Zhang for the design of the MAM computational methodology and related code support. Appropriate citation has been provided in our formally published paper to acknowledge this contribution. Please do cite the corresponding work when using SAVIOR with MAM computation.
 
 ### Validation and Test Datasets
 To re-implement the experiments in the paper, it is recommended to download the dataset used in this paper.
