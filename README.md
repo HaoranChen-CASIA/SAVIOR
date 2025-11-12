@@ -1,7 +1,7 @@
 # SAVIOR
 Official implementation of "SAVIOR: Assessing Volume Alignment Quality for Serial Section Electron Microscopy Images using Large Vision-Language Model"
 
-### Important Citation of Membrane Affinity Map computing (*)
+## Important Citation of Membrane Affinity Map computing (*)
 In this paper, we used the Membrane Affinity Map (MAM) to guide optical flow gain biological prior knowledge (see MAM-guided Estimator).
 The computation method of MAM was cited from an unpublished work of our laboratory (OrgMIM by Yanchao Zhang), and its Github repository can be find in
 
